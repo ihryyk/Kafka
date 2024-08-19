@@ -14,6 +14,9 @@
 	<name>consumer-service</name>
 	<properties>
 		<java.version>17</java.version>
+		<org.jetbrains.version>24.0.1</org.jetbrains.version>
+		<jackson-databind.version>2.17.2</jackson-databind.version>
+		<org.locationtech.spatial4j.vesrion>0.8</org.locationtech.spatial4j.vesrion>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -43,18 +46,18 @@
 		<dependency>
 			<groupId>org.jetbrains</groupId>
 			<artifactId>annotations</artifactId>
-			<version>24.0.1</version>
+			<version>${org.jetbrains.version}</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.17.2</version>
+			<version>${jackson-databind.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.locationtech.spatial4j</groupId>
 			<artifactId>spatial4j</artifactId>
-			<version>0.8</version>
+			<version>${org.locationtech.spatial4j.vesrion}</version>
 		</dependency>
 
 	</dependencies>
