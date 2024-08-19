@@ -26,8 +26,7 @@ public class VehicleConsumerService {
     public void consume(String message) {
         try {
             log.info("Received signal: {} ...", message);
-            ObjectMapper mapper = new ObjectMapper();
-            VehicleSignal vehicleSignal = mapper.readValue(message, VehicleSignal.class);
+            VehicleSignal vehicleSignal = objectMapper.readValue(message, VehicleSignal.class);
             calculateDistance(vehicleSignal);
             kafkaTemplate.send("output",
                     vehicleSignal.getVehicleId(),
