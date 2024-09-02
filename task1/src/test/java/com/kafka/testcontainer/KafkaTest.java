@@ -30,10 +30,10 @@ public class KafkaTest {
     @Autowired
     private KafkaProducer producer;
 
-    @DynamicPropertySource
-    public static void setKafkaProperties(DynamicPropertyRegistry registry) {
-        registry.add("spring.kafka.bootstrap-servers", kafka::getBootstrapServers);
-    }
+//    @DynamicPropertySource
+//    public static void setKafkaProperties(DynamicPropertyRegistry registry) {
+//        registry.add("spring.kafka.bootstrap-servers", kafka::getBootstrapServers);
+//    }
 
     @Test
     public void testKafkaProducerAndConsumer() throws InterruptedException {
