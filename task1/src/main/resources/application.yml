@@ -1,8 +1,8 @@
 kafka:
   topic: test
-spring:
-  kafka:
-    bootstrap-servers: localhost:9092
+#spring:
+#  kafka:
+#    bootstrap-servers: localhost:9092
 logging:
   level:
     org.apache.kafka.clients: DEBUG
