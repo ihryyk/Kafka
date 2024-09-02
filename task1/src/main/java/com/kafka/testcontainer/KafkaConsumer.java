@@ -17,6 +17,6 @@ public class KafkaConsumer {
     public void receive(ConsumerRecord<?, ?> consumerRecord) {
         String message = consumerRecord.toString();
         payload = message;
-        log.info("received payload='{}'", message);
+        log.info(" received payload='{}'", message);
     }
 }
